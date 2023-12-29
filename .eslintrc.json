@@ -1,0 +1,51 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "eqeqeq": ["error", "always"], // Exigir o uso de === e !==
+    "no-trailing-spaces": "error", // Não permitir espaços em branco à direita
+    "object-curly-spacing": ["error", "always"], // Exigir espaçamento dentro de chaves de objeto
+    "array-bracket-spacing": ["error", "never"], // Exigir ou proibir espaços dentro de colchetes de array
+    "block-spacing": ["error", "always"], // Exigir ou proibir espaçamento dentro de blocos de código
+    "comma-dangle": ["error", "never"], // Não permitir vírgulas finais
+    "semi": ["error", "always"], // Exigir ponto e vírgula no final das instruções
+    "no-unused-vars": "warn", // Variáveis não utilizadas devem emitir um aviso
+    "no-console": "warn", // Uso de console.log() deve emitir um aviso
+    "no-debugger": "error", // Não permitir uso do debugger
+
+    // Regras Específicas do React
+    "react/jsx-uses-react": "off", // Não necessário com a nova transformação JSX no React 17+
+    "react/react-in-jsx-scope": "off", // Não necessário com a nova transformação JSX no React 17+
+    "react/prop-types": "off", // Desativar verificação de prop-types se estiver usando TypeScript
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }], // Permitir JSX apenas em arquivos .jsx e .tsx
+
+    // Regras do TypeScript com @typescript-eslint
+    "@typescript-eslint/explicit-function-return-type": "off", // Não exigir tipo de retorno explícito
+    "@typescript-eslint/no-explicit-any": "warn", // Usar 'any' em TypeScript deve emitir um aviso
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }], // Permitir variáveis não utilizadas se começarem com _
+
+    // Regras de Hooks do React
+    "react-hooks/rules-of-hooks": "error", // Regras para os Hooks do React
+    "react-hooks/exhaustive-deps": "warn", // Verificar as dependências dos Hooks do React
+       // Regras de Indentação
+       "indent": ["error", 2, { "SwitchCase": 1 }],
+       "react/jsx-indent": ["error", 2],
+       "react/jsx-indent-props": ["error", 2]
+
+  }
+}

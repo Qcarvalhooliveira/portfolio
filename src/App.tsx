@@ -1,11 +1,8 @@
+import { Homepage } from "./homepage";
 
 export function App() {
-
-
   return (
-    <>
- <h1>MainPage</h1>
-    </>
-  )
+    <Homepage/>
+  );
 }
 
