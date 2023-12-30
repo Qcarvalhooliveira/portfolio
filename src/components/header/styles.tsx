@@ -7,6 +7,7 @@ align-items: flex-start;
 justify-content: space-between;
 padding: 4rem;
 height:100vh;
+font-family: 'Bungee';
 
 background: no-repeat;
 background-size: cover;
@@ -30,12 +31,21 @@ background-size: cover;
        align-items: center;
        justify-content:space-between;
        gap: 1rem;
+       
 
       button {
       background: transparent;
       border: none;
       padding: 0.5rem 1rem;
       color: #fff;
+      width: 130px;
+      height: 35px;
+      border-radius: 22px;
+      font-weight: 600;
+    font-size: 14px;
+    box-shadow: 3px 3px 10px 3px rgba(0.25,0.25,0.25,0.25);
+    padding: 0.5rem 1rem;
+    font-family: 'Bungee', sans-serif;
     
       cursor: pointer;
       transition:0.3s;
@@ -49,12 +59,12 @@ background-size: cover;
     }
     }
 
-button {
+  .resume {
     display: flex;
     align-items:center;
     justify-content:center;
     cursor: pointer;
-    text-decoration: none;
+   
 
     width: 130px;
     height: 35px;
@@ -67,8 +77,12 @@ button {
     font-size: 14px;
     box-shadow: 3px 3px 10px 3px rgba(0.25,0.25,0.25,0.25);
     padding: 0.5rem 1rem;
-     
+    font-family: 'Bungee', sans-serif;
     transition: 0.3s;
+
+    a{
+      text-decoration: none
+    }
 
       &:hover {
          
@@ -79,22 +93,59 @@ button {
 
 .side-links {
     
-    position: fixed; // Fixa o componente na tela
-    left: 10px; // Distância da borda esquerda
-    top: 50%; // Centraliza verticalmente
+    position: fixed;
+    left: 10px; 
+    top: 50%; 
     display: flex;
-    flex-direction: column; // Links em coluna
-    gap: 15px; // Espaçamento entre os links
+    flex-direction: column;
+    gap: 15px; 
 
     a {
-      color: #fff; // Cor do texto
-      text-decoration: none; // Remove o sublinhado
-      // Mais estilos para os links, se necessário
-    }
+      color: #fff; 
+      text-decoration: none; 
 
     a:hover {
-      color: #cb6ce6; // Cor ao passar o mouse
+      color: #cb6ce6; 
     }
   }
+}
 
+.intro {
+    position: absolute;
+    left: 120px; 
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 24px; 
+    font-weight: 600;
+    width: 450px; 
+    height: 200px; 
+
+    span {
+      font-family: 'Bungee Hairline', sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px
+
+    }
+      
+}
+
+.scroll-down-btn {
+  position: absolute; 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  left: 170px; 
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+ 
+  img{
+    width: 5rem;
+    height: 5rem;
+  }
+
+}
 `;

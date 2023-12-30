@@ -5,7 +5,7 @@ import { HomepageContainer } from "./styles";
 export function Homepage(){
   return(
     < HomepageContainer>
-      <h1>Hi, I'm Queise Carvalho</h1>
+      <p>Hi, I'm Queise Carvalho</p>
       <h1>Hi, I'm Queise Carvalho</h1>
       <h1>Hi, I'm Queise Carvalho</h1>
       <h1>Hi, I'm Queise Carvalho</h1>
