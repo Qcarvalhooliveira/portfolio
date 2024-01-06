@@ -70,7 +70,7 @@ background-size: cover;
     height: 35px;
     border-radius: 22px;
     background-color: #cb6ce6;
-    color: #FFFFFF;
+    color: #fff;
     border: none;
     font-family: 'Source Sans Pro', sans-serif; 
     font-weight: 600;
@@ -81,7 +81,8 @@ background-size: cover;
     transition: 0.3s;
 
     a{
-      text-decoration: none
+      color: #fff;
+      text-decoration: none;
     }
 
       &:hover {

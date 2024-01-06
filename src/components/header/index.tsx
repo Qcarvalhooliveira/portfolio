@@ -38,8 +38,8 @@ export function Header(){
 
   const scrollDown = () => {
     window.scrollTo({
-      top: window.innerHeight, // Altura da janela de visualização
-      behavior: 'smooth' // Rolagem suave
+      top: window.innerHeight,
+      behavior: 'smooth'
     });
   };
 
@@ -62,7 +62,7 @@ export function Header(){
         <button>Contact</button>
       </div>
       <button className="resume">
-        <a href="https://www.linkedin.com/in/queise-carvalho-de-oliveira-50359749/"
+        <a href="https://drive.google.com/file/d/13P2-2AIEvRDEEqn2M9G8diYO3-Bj75wf/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           Resume</a>
