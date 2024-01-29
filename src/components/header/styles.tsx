@@ -42,10 +42,10 @@ background-size: cover;
       height: 35px;
       border-radius: 22px;
       font-weight: 600;
-    font-size: 14px;
-    box-shadow: 3px 3px 10px 3px rgba(0.25,0.25,0.25,0.25);
-    padding: 0.5rem 1rem;
-    font-family: 'Bungee', sans-serif;
+      font-size: 14px;
+      box-shadow: 3px 3px 10px 3px rgba(0.25,0.25,0.25,0.25);
+      padding: 0.5rem 1rem;
+      font-family: 'Bungee', sans-serif;
     
       cursor: pointer;
       transition:0.3s;
@@ -66,7 +66,7 @@ background-size: cover;
     cursor: pointer;
    
 
-    width: 130px;
+    max-width: 130px;
     height: 35px;
     border-radius: 22px;
     background-color: #cb6ce6;
@@ -120,8 +120,8 @@ background-size: cover;
     color: #fff;
     font-size: 24px; 
     font-weight: 600;
-    width: 450px; 
-    height: 200px; 
+    max-width: 450px; 
+    max-height: 200px; 
 
     span {
       font-family: 'Bungee Hairline', sans-serif;
@@ -144,9 +144,22 @@ background-size: cover;
   flex-direction: column;
  
   img{
-    width: 5rem;
+    max-width: 5rem;
     height: 5rem;
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .HeaderContainer .backgroundImage {
+    max-width: 768px;
+    max-height:auto;
+    background-position: 35% 80%;
+
+  }
+
+}
+  
+
 `;
