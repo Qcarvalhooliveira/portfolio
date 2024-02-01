@@ -33,9 +33,11 @@ background-size: cover;
        gap: 1rem;
        
 
-      button {
+      a {
       background: transparent;
       border: none;
+      text-decoration: none;
+      text-align: center;
       padding: 0.5rem 1rem;
       color: #fff;
       width: 130px;

@@ -57,9 +57,9 @@ export function Header(){
         <img src={scrolldown} alt="Scroll down" />
       </button>
       <div className="navigation">
-        <button>Projects</button>
-        <button>About me</button>
-        <button>Contact</button>
+        <a href="#projects">Projects</a>
+        <a href="#about">About me</a>
+        <a href="#contact">Contact</a>
       </div>
       <button className="resume">
         <a href="https://drive.google.com/file/d/13P2-2AIEvRDEEqn2M9G8diYO3-Bj75wf/view?usp=sharing"

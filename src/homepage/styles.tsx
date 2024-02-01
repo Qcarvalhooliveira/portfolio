@@ -96,9 +96,15 @@ h1 {
 
 .About {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: #800F74;
     padding: 20px;
+}
+
+.About .foto {
+    max-width:20%;
+    max-height:30%;
+
 }
 
 .About h1 {

@@ -4,6 +4,7 @@ import printf from "../assets/ printf.png";
 import shell from "../assets/ Simple Shell.png";
 import airbnb from "../assets/ Airbnb.png";
 import afrohair from "../assets/Banner-afrohair.png";
+import foto from "../assets/foto.png";
 
 
 export function Homepage(){
@@ -70,9 +71,10 @@ export function Homepage(){
         </div>
       </div>
       <div className="About">
+        <img className="foto" src={foto} alt="foto" />
         <h1>About me</h1>
         <div>
-          <p>Hello, I'm Queise Carvalho! A programming student at Holberton School, I'm currently pursuing a specialization in full-stack development. Seeking new challenges, I transitioned from the administrative field to the world of programming. I've been living in France since 2016, where I worked as a paralegal for four years. However, I decided to make a career shift into technology and I'm thoroughly enjoying the journey. Being multilingual in Portuguese, French, English  and Spanish greatly aids in my studies and I'm keen on continuously advancing in this field.</p>
+          <p>Hello, I'm Queise Carvalho! A programming student at Holberton School and I'm currently pursuing a specialization in full-stack development. Seeking new challenges, I transitioned from the administrative field to the world of programming. I've been living in France since 2016, where I worked as a paralegal for four years. However, I decided to make a career shift into technology and I'm thoroughly enjoying the journey. Being multilingual in Portuguese, French, English  and Spanish greatly aids in my studies and I'm keen on continuously advancing in this field.</p>
 
           <p>During the first cycle at Holberton School, I have acquired skills in a wide range of technologies and programming languages. Here are some of the key tools and languages I've learned:</p>
 
