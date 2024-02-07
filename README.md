@@ -1,10 +1,12 @@
 # React + TypeScript + Vite
 
 ```
-console.log('One');
-setTimeout(() => console.log('Two'), 0);
-console.log('Three');
-// Output: One, Three, Two
-
+<div class="container">
+  <div class="row">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col">Column 3</div>
+  </div>
+</div>
 
 ```
