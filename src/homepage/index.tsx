@@ -8,6 +8,16 @@ import foto from "../assets/foto.png";
 
 
 export function Homepage(){
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText("queisecarvalhodev@gmail.com")
+      .then(() => {
+        alert('E-mail copied to clipboard!');
+      })
+      .catch(err => {
+        console.log('Something went wrong', err);
+      });
+  };
   return(
     < HomepageContainer>
       <h1>Projects</h1>
@@ -70,6 +80,7 @@ export function Homepage(){
           </div>
         </div>
       </div>
+
       <div className="About">
         <img className="foto" src={foto} alt="foto" />
         <h1>About me</h1>
@@ -79,9 +90,16 @@ export function Homepage(){
           <p>During the first cycle at Holberton School, I have acquired skills in a wide range of technologies and programming languages. Here are some of the key tools and languages I've learned:</p>
 
           <img src="https://skillicons.dev/icons?i=c,js,typescript,python,html,css,bootstrap,react,nodejs,mysql,git,github,vscode,figma,linux" />
-
         </div>
+      </div>
 
+      <div className="Contact">
+        <h1>Contact</h1>
+        <div className="email-container">
+          <p>queisecarvalhodev@gmail.com</p>
+          <button onClick={copyToClipboard}>📋</button>
+          <a href="mailto:queisecarvalhodev@gmail.com" className="send-email-button">Send</a>
+        </div>
       </div>
     </HomepageContainer>
   );

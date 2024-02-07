@@ -128,4 +128,53 @@ h1 {
     padding:30px;
 }
 
+.Contact {
+    width: 100%;
+    height: 400px;
+    
+}
+
+.Contact h1 {
+    font-family: 'Bungee';
+    color: #800F74;
+    font-weight: 600;
+}
+
+.email-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;   
+    max-width: 60%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4ecf7;
+}
+
+.Contact p {
+  padding: 20px;
+  font-family: 'Bungee';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.Contact button {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.Contact a {
+  padding: 10px;
+  background-color: #800F74;;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+    
+
 `;
