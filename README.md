@@ -1,13 +1,20 @@
 # React + TypeScript + Vite
 
 ```
-function get_add(x) {
-  return function(y) {
-    return x + y;
+function createUniqueIdGenerator() {
+  let id = 0; // Private variable, inaccessible from outside createUniqueIdGenerator
+  return {
+    getNextId: function() {
+      id += 1;   // Increments the private variable 'id'
+      return id;  // Returns the new value of 'id'
+    }
   };
 }
 
-let addFive = get_add(5);
-console.log(addFive(2));
-// Outputs: 7
+// Using the function
+const uniqueIdGenerator = createUniqueIdGenerator();
+console.log(uniqueIdGenerator.getNextId()); // 1
+console.log(uniqueIdGenerator.getNextId()); // 2
+console.log(uniqueIdGenerator.getNextId()); // 3
+
 ```
