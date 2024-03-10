@@ -5,7 +5,15 @@ import shell from "../../assets/ Simple Shell.png";
 import airbnb from "../../assets/ Airbnb.png";
 import afrohair from "../../assets/Banner-afrohair.png";
 import foto from "../../assets/foto.png";
+import { motion } from 'framer-motion';
 
+
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -100 }
+};
 
 export function Homepage(){
 
@@ -15,14 +23,16 @@ export function Homepage(){
         alert('E-mail copied to clipboard!');
       })
       .catch(err => {
-        console.log('Something went wrong', err);
+        console.error('Something went wrong', err);
       });
   };
+
+
   return(
     < HomepageContainer>
       <div id="projects" className="list">
         <h1>Projects</h1>
-        <div className="item">
+        <motion.div variants={itemVariants} initial="hidden" whileInView="visible" exit="exit" transition={{ duration: 1.0 }} className="item">
           <img src={afrohair} alt="afrohair"/>
           <div className="content">
             <div className="title">Projet AFROHAIR</div>
@@ -37,8 +47,8 @@ export function Homepage(){
               <button>Github</button>
             </div>
           </div>
-        </div>
-        <div className="item">
+        </motion.div>
+        <motion.div variants={itemVariants} initial="hidden" whileInView="visible" exit="exit" transition={{ duration: 1.0 }} className="item">
           <img src={airbnb} alt="airbnb"/>
           <div className="content">
             <div className="title">Project AirBNB Clone</div>
@@ -52,8 +62,8 @@ export function Homepage(){
               <button>Github</button>
             </div>
           </div>
-        </div>
-        <div className="item">
+        </motion.div>
+        <motion.div variants={itemVariants} initial="hidden" whileInView="visible" exit="exit" transition={{ duration: 1.0 }} className="item">
           <img src={shell} alt="shell"/>
           <div className="content">
             <div className="title">Project Simple Shell</div>
@@ -65,8 +75,8 @@ export function Homepage(){
               <button>Github</button>
             </div>
           </div>
-        </div>
-        <div className="item">
+        </motion.div>
+        <motion.div variants={itemVariants} initial="hidden" whileInView="visible" exit="exit" transition={{ duration: 1.0 }} className="item">
           <img src={printf} alt="printf"/>
           <div className="content">
             <div className="title">Project PRINTF</div>
@@ -78,7 +88,7 @@ export function Homepage(){
               <button>Github</button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div id="about" className="About">
