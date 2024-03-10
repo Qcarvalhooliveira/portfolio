@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>CanvasWaves.js demo</title>
+    <script src="dist/canvas-waves.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="demo demo--basic">
+      <button class="wave__toggle1">Toggle animation 1</button>
+      <button class="wave__toggle2">Toggle animation 2</button>
+    </div>
+    <div class="demo demo--waveGrows"></div>
+    <div class="demo demo--twoWaves"></div>
+  </body>
+
+  <script>
+    window.addEventListener("load", () => {
+      const wave = CanvasWaves.create(".demo--basic", {
+        opacity: 0.2,
+        horizontalOffset: 0,
+        waveHeight: "20%",
+        baseHeight: "20%",
+        waveGrows: 1
+      });
+
+      wave.draw();
+      const waveToggle = document.querySelector(".wave__toggle1");
+      wave.toggleAnimation();
+      waveToggle.addEventListener("click", () => {
+        wave.toggleAnimation();
+      });
+
+      const wave2 = CanvasWaves.create(".demo--basic", {
+        opacity: 0.3,
+        horizontalOffset: 0,
+        color: "rgb(100,220,0)",
+        speed: 8000,
+        waveHeight: "20%",
+        baseHeight: "20%",
+        waveGrows: 1
+      });
+
+      wave2.draw();
+      const waveToggle2 = document.querySelector(".wave__toggle2");
+      waveToggle2.addEventListener("click", () => {
+        wave2.toggleAnimation();
+      });
+    });
+  </script>
+
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .demo {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .demo--waveGrows {
+      background: green;
+      opacity: 0.2;
+    }
+
+    .demo--twoWaves {
+      background: red;
+      opacity: 0.2;
+    }
+
+    .wave__toggle1,
+    .wave__toggle2 {
+      position: relative;
+    }
+  </style>
+</html>

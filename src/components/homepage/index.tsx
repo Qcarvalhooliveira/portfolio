@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { HomepageContainer } from "./styles";
-import printf from "../assets/ printf.png";
-import shell from "../assets/ Simple Shell.png";
-import airbnb from "../assets/ Airbnb.png";
-import afrohair from "../assets/Banner-afrohair.png";
-import foto from "../assets/foto.png";
+import printf from "../../assets/ printf.png";
+import shell from "../../assets/ Simple Shell.png";
+import airbnb from "../../assets/ Airbnb.png";
+import afrohair from "../../assets/Banner-afrohair.png";
+import foto from "../../assets/foto.png";
 
 
 export function Homepage(){
@@ -20,8 +20,8 @@ export function Homepage(){
   };
   return(
     < HomepageContainer>
-      <h1>Projects</h1>
-      <div className="list">
+      <div id="projects" className="list">
+        <h1>Projects</h1>
         <div className="item">
           <img src={afrohair} alt="afrohair"/>
           <div className="content">
@@ -81,7 +81,7 @@ export function Homepage(){
         </div>
       </div>
 
-      <div className="About">
+      <div id="about" className="About">
         <img className="foto" src={foto} alt="foto" />
         <h1>About me</h1>
         <div>
@@ -93,11 +93,11 @@ export function Homepage(){
         </div>
       </div>
 
-      <div className="Contact">
+      <div id="contact" className="Contact">
         <h1>Contact</h1>
         <div className="email-container">
           <p>queisecarvalhodev@gmail.com</p>
-          <button onClick={copyToClipboard}>📋</button>
+          <button title="copy" onClick={copyToClipboard}>📋</button>
           <a href="mailto:queisecarvalhodev@gmail.com" className="send-email-button">Send</a>
         </div>
       </div>

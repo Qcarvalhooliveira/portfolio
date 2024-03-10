@@ -11,9 +11,7 @@ font-family: 'Bungee';
 
 background: no-repeat;
 background-size: cover;
-
-
-   
+  
 
 :first-child{
     display:flex;
@@ -30,8 +28,7 @@ background-size: cover;
        display: flex;
        align-items: center;
        justify-content:space-between;
-       gap: 1rem;
-       
+       gap: 1rem;       
 
       a {
       background: transparent;

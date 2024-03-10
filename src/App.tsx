@@ -1,8 +1,12 @@
-import { Homepage } from "./homepage";
+import { Homepage } from "./components/homepage";
+import { Footer } from "./components/footer";
 
 export function App() {
   return (
-    <Homepage/>
+    <>
+      <Homepage />
+      <Footer />
+    </>
   );
 }
 

@@ -5,8 +5,9 @@ export const HomepageContainer = styled.div`
 
     width: 100%;
     text-align: center;
+
    
-    font-family: 'Bungee Hairline', sans-serif; 
+    font-family: 'Bungee Hairline', sans-serif;
 
 
 h1 {
@@ -129,9 +130,14 @@ h1 {
 }
 
 .Contact {
-    width: 100%;
+    max-width: 100%;
     height: 400px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+  
 }
 
 .Contact h1 {
@@ -152,6 +158,13 @@ h1 {
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f4ecf7;
+
+    button{
+        padding: 20px;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
 }
 
 .Contact p {
@@ -161,10 +174,6 @@ h1 {
   font-size: 18px;
 }
 
-.Contact button {
-    padding: 20px;
-    text-decoration: none;
-}
 
 .Contact a {
   padding: 10px;
@@ -173,8 +182,6 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
-}
-
-    
+}  
 
 `;
