@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HomepageContainer = styled.div`
 
 
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 
    
@@ -147,12 +147,12 @@ h1 {
 }
 
 .email-container {
+    max-width: 100%;
     display: flex; 
     align-items: center; 
     justify-content: center;
     padding: 20px;
     gap: 20px;   
-    max-width: 60%;
     height: 100px;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -182,6 +182,92 @@ h1 {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
-}  
+} 
 
+@media screen and (max-width: 768px) {
+
+.list{
+    padding: 2px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.About{
+    width: 100%;
+    height: 950px;
+}
+
+.About p{
+
+    padding: 30px 50px 20px 70px;
+    
+}
+.About div img {
+    width: 95%;
+    padding: 40px;
+}
+.email-container{
+    max-width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+
+    .item {
+        width: 95%;
+    }
+
+    .About{
+    width: 100%;
+    height: auto;
+}
+
+    .About p{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 auto;
+        box-sizing: border-box;  
+}
+
+    .About div img {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .Contact {
+        width: 100%;
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .email-container {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Contact p, .Contact button, .Contact a {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+
+    .Contact button, .Contact a {
+        width: auto;
+        padding: 8px 16px;
+
+}
+}
+}
 `;

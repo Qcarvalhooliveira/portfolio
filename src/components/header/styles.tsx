@@ -95,7 +95,7 @@ background-size: cover;
     
     position: fixed;
     left: 10px; 
-    top: 50%; 
+    top: 42%; 
     display: flex;
     flex-direction: column;
     gap: 15px; 
@@ -151,14 +151,49 @@ background-size: cover;
 
 @media screen and (max-width: 768px) {
 
-  .HeaderContainer .backgroundImage {
-    max-width: 768px;
-    max-height:auto;
-    background-position: 35% 80%;
+  background-size: auto 100%;
+  background-position: 38%;
 
+  .scroll-down-btn {
+    left: 600px; 
+    top: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  background-size: auto 100%;
+  background-position: 50%;
+
+  .side-links {
+    display: none;
   }
 
-}
-  
+  .scroll-down-btn {
+    display: none;
+  }
 
+  .intro {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%; 
+    padding: 15px;
+    max-height: 200px; 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 24px; 
+    font-weight: 600;
+    
+
+    span {
+      font-family: 'Bungee Hairline', sans-serif;
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px
+
+    }
+}
+
+}
 `;
