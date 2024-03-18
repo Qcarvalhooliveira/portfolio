@@ -43,6 +43,11 @@ export function Header(){
     });
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+
   return(
     <HeaderContainer style={{ backgroundImage: `url(${background})` }}>
       <div className="side-links">
@@ -67,6 +72,19 @@ export function Header(){
           rel="noopener noreferrer">
           Resume</a>
       </button>
+      <div className="menu-icon" onClick={toggleMenu}>
+        &#9776;
+      </div>
+      {isMenuOpen && (
+        <div className="mobile-menu">
+          <a href="#projects" onClick={toggleMenu}>Projects</a>
+          <a href="#about" onClick={toggleMenu}>About me</a>
+          <a href="#contact" onClick={toggleMenu}>Contact</a>
+          <a href="https://drive.google.com/file/d/13P2-2AIEvRDEEqn2M9G8diYO3-Bj75wf/view?usp=sharing" target="_blank" onClick={toggleMenu} rel="noreferrer">Resume</a>
+          <a href="https://www.linkedin.com/in/queise-carvalho-de-oliveira-50359749/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Qcarvalhooliveira" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      )}
     </HeaderContainer>
 
   );

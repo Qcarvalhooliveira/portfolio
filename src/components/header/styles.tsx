@@ -149,6 +149,28 @@ background-size: cover;
 
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 100vh;
+    background-color: #fff; /* Ou qualquer cor que se encaixe no seu design */
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+
+
 @media screen and (max-width: 768px) {
 
   background-size: auto 100%;
@@ -172,6 +194,15 @@ background-size: cover;
     display: none;
   }
 
+  .navigation {
+    display: none;
+  }
+
+  .resume {
+    display: none;
+  }
+
+
   .intro {
     position: absolute;
     left: 0;
@@ -193,7 +224,17 @@ background-size: cover;
       font-size: 24px
 
     }
-}
+  }
+    .menu-icon {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #fff;
+    }
 
+    .mobile-menu {
+      display: flex;
+    }
 }
 `;
