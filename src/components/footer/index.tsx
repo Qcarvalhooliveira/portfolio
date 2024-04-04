@@ -8,7 +8,7 @@ export function Footer() {
     <FooterContainer>
       <div className="icons-container">
         <img src={logo} alt="Logo" />
-        <a href="https://discord.com/invite/seuconvite" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/MsKE63YqUY" target="_blank" rel="noopener noreferrer">
           <img src={discord} alt="Discord" />
         </a>
       </div>

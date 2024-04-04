@@ -67,7 +67,7 @@ export function Header(){
         <a href="#contact">Contact</a>
       </div>
       <button className="resume">
-        <a href="https://drive.google.com/file/d/13P2-2AIEvRDEEqn2M9G8diYO3-Bj75wf/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/1BYcSNdjQWSkeO00IdwJvHW5WuH9Jyhel/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           Resume</a>
@@ -77,10 +77,11 @@ export function Header(){
       </div>
       {isMenuOpen && (
         <div className="mobile-menu">
+          <div className="close-icon" onClick={toggleMenu}>X</div>
           <a href="#projects" onClick={toggleMenu}>Projects</a>
           <a href="#about" onClick={toggleMenu}>About me</a>
           <a href="#contact" onClick={toggleMenu}>Contact</a>
-          <a href="https://drive.google.com/file/d/13P2-2AIEvRDEEqn2M9G8diYO3-Bj75wf/view?usp=sharing" target="_blank" onClick={toggleMenu} rel="noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1BYcSNdjQWSkeO00IdwJvHW5WuH9Jyhel/view?usp=sharing" target="_blank" onClick={toggleMenu} rel="noreferrer">Resume</a>
           <a href="https://www.linkedin.com/in/queise-carvalho-de-oliveira-50359749/" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/Qcarvalhooliveira" target="_blank" rel="noreferrer">GitHub</a>
         </div>

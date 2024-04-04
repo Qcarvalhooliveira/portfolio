@@ -160,9 +160,9 @@ background-size: cover;
     position: fixed;
     top: 0;
     right: 0;
-    width: 200px; /* Ajuste a largura conforme necessário */
+    width: 200px;
     height: 100vh;
-    background-color: #fff; /* Ou qualquer cor que se encaixe no seu design */
+    background-color: #fff;
     box-shadow: -2px 0px 5px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -233,8 +233,25 @@ background-size: cover;
       color: #fff;
     }
 
-    .mobile-menu {
-      display: flex;
-    }
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+
+  .close-icon {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #800F74;
+    border: 1px solid #800F74;
+    border-radius: 100%;
+    background-color: #dfb3eb;
+  }
+}
 }
 `;
