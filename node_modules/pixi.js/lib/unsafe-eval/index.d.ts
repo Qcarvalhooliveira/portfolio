@@ -1,5 +1,0 @@
-export * from './shader/generateShaderSyncPolyfill';
-export * from './ubo/generateUboSyncPolyfill';
-export * from './ubo/uboSyncFunctions';
-export * from './uniforms/generateUniformsSyncPolyfill';
-export * from './uniforms/uniformSyncFunctions';
