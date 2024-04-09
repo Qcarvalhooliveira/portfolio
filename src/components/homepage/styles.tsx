@@ -77,11 +77,11 @@ h1 {
     font-weight:700;
 }
 
-.buttom {
-    text-align: center;
-}
 
-.buttom button {
+.buttom a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
     padding: 10px 20px;
     background-color: #800F74;
     color: white;
@@ -91,7 +91,7 @@ h1 {
     transition: background-color 0.3s ease-in-out;
 }
 
-.buttom button:hover {
+.buttom a:hover {
     background-color: #cb6ce6;
 }
 

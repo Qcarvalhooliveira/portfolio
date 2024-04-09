@@ -149,6 +149,23 @@ background-size: cover;
 
 }
 
+.scroll-up-btn {
+  position: absolute; 
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  right: 70px;
+  top: 53%;
+  display: flex;
+  flex-direction: column;
+ 
+  img{
+    max-width: 5rem;
+    height: 5rem;
+  }
+
+}
+
 .menu-icon {
     display: none;
     font-size: 30px;
@@ -180,6 +197,10 @@ background-size: cover;
     left: 600px; 
     top: 85%;
   }
+
+  .scroll-up-btn {
+    left: 675px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -191,6 +212,10 @@ background-size: cover;
   }
 
   .scroll-down-btn {
+    display: none;
+  }
+
+  .scroll-up-btn {
     display: none;
   }
 

@@ -44,7 +44,7 @@ export function Homepage(){
             <div className="description">For my final evaluation, I was tasked with creating a website from scratch, utilizing all the knowledge I had acquired throughout the course. It was incredibly rewarding to develop a fully functional site dedicated to the sale of natural hair products. This project allowed me to showcase my skills in front-end and back-end development, translations, and payment integrations. Its success has inspired me to pursue further specialization in full-stack development to enhance my skills even more.
             </div>
             <div className="buttom">
-              <button>Github</button>
+              <a href="https://github.com/Qcarvalhooliveira/Afro-Hair" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </motion.div>
@@ -59,7 +59,7 @@ export function Homepage(){
             <div className="description">For our end-of-second-trimester evaluation, we took on the task of cloning the AirBNB website. This project significantly enhanced our front-end and back-end development skills. It was a comprehensive learning experience, deepening our understanding of full-stack web development.
             </div>
             <div className="buttom">
-              <button>Github</button>
+              <a href="https://github.com/Qcarvalhooliveira/holbertonschool-AirBnB_clone_v4" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </motion.div>
@@ -72,7 +72,7 @@ export function Homepage(){
             <div className="description">As our second evaluation project in the first trimester, we faced the challenge of building a command interpreter from scratch. It was a demanding project that tested our abilities. Successfully completing it demonstrated our growing skills in handling complex programming tasks.
             </div>
             <div className="buttom">
-              <button>Github</button>
+              <a href="https://github.com/Qcarvalhooliveira/holbertonschool-simple_shell" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </motion.div>
@@ -85,7 +85,7 @@ export function Homepage(){
             <div className="description">Our first project aimed to showcase the skills we acquired in the first trimester, focusing on variables, strings, and memory allocation in C. This project involved creating our version of the printf function, highlighting our foundational understanding of C programming.
             </div>
             <div className="buttom">
-              <button>Github</button>
+              <a href="https://github.com/Qcarvalhooliveira/holbertonschool-printf" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </motion.div>
