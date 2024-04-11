@@ -239,8 +239,21 @@ h1 {
     height: auto;
 }
 
-
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(70%) sepia(40%) saturate(3000%) hue-rotate(250deg) brightness(100%);}
+    .carousel-indicators {   
+    filter: invert(70%) sepia(40%) saturate(3000%) hue-rotate(250deg) brightness(100%);
+    }
 @media screen and (max-width: 480px) {
+    .carousel-indicators {   
+    filter: invert(70%) sepia(40%) saturate(3000%) hue-rotate(250deg) brightness(100%);
+    }
+
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(70%) sepia(40%) saturate(3000%) hue-rotate(250deg) brightness(100%);
+}
 
     .item{
         margin-left: 5%;
