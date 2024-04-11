@@ -265,6 +265,12 @@ background-size: cover;
     padding: 20px;
     gap: 10px;
 
+    a {
+      text-decoration: none;
+      color: #800F74;
+
+    }
+
   .close-icon {
     margin-left: auto;
     cursor: pointer;

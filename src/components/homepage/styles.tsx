@@ -186,8 +186,12 @@ h1 {
 
 @media screen and (max-width: 768px) {
 
+
+
 .list{
     padding: 2px;
+  
+   
 }
 
 .item{
@@ -195,6 +199,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #f4ecf7;
     }
 
 .content{
@@ -202,9 +207,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 70%
 
 }
 
+.description{
+   
+    width: 80%;
+    height: 80%;
+}
 .About{
     width: 100%;
     height: 950px;
@@ -223,11 +234,33 @@ h1 {
     max-width: 80%;
 }
 
+  .carousel-item img {
+    width: 50%;
+    height: auto;
+}
+
+
 @media screen and (max-width: 480px) {
 
-    .item {
-        width: 95%;
+    .item{
+        margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4ecf7;
+    width: 90%;
+    
     }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%
+
+}
 
     .About{
     width: 100%;
@@ -268,6 +301,8 @@ h1 {
         padding: 8px 16px;
 
 }
+
 }
 }
+
 `;
