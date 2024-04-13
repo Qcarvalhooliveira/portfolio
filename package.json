@@ -20,6 +20,7 @@
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
     "pixi.js": "^8.0.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
