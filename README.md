@@ -1,26 +1,28 @@
 ### **Portifolio** Live Preview - [Click Here](https://qcarvalhooliveira.github.io/portfolio/)
 
+<img src="https://github.com/Qcarvalhooliveira/portfolio/blob/main/image/portifolio.png">
+
 ## **Description:**
 
 This repository showcases my projects completed during the first foundational cycle at Holberton School. The main focus is to present the skills and techniques learned and how they were applied in practical projects.
 
 ## **Features:**
 
-* Projects: Exploration of some developed projects.
-* About Me: A section about my journey and experience.
-* Contact: Contact information for collaborations or inquiries.
-* Resume: Access to my updated resume.
+* **Projects:** Exploration of some developed projects.
+* **About Me:** A section about my journey and experience.
+* **Contact:** Contact information for collaborations or inquiries.
+* **Resume:** Access to my updated resume.
 
 ## **Technologies Used:**
 
-* The project leverages several modern technologies and tools to create a dynamic and responsive user experience:
+The project leverages several modern technologies and tools to create a dynamic and responsive user experience:
 
-* React TypeScript: A JavaScript library paired with TypeScript for building user interfaces with static typing, enhancing code quality and maintainability.
-* Vite: An extremely fast frontend build tool that significantly improves the development experience.
-* GitHub Pages: A hosting service that turns GitHub repositories into websites, used here to deploy the portfolio project.
-* Styled Components: Utilized for writing actual CSS code to style React components within JavaScript, allowing for more flexible and scalable styling.
-* Framer Motion: A powerful library for animations in React, enhancing the interface with smooth and natural motion effects.
-* React Carousel: A flexible carousel component for React, providing a touch-enabled and responsive slider experience to showcase projects and content effectively.
+* **React TypeScript:** A JavaScript library paired with TypeScript for building user interfaces with static typing, enhancing code quality and maintainability.
+* **Vite:** An extremely fast frontend build tool that significantly improves the development experience.
+* **GitHub Pages:** A hosting service that turns GitHub repositories into websites, used here to deploy the portfolio project.
+* **Styled Components:** Utilized for writing actual CSS code to style React components within JavaScript, allowing for more flexible and scalable styling.
+* **Framer Motion:** A powerful library for animations in React, enhancing the interface with smooth and natural motion effects.
+* **React Carousel:** A flexible carousel component for React, providing a touch-enabled and responsive slider experience to showcase projects and content effectively.
 
 ## **Preview:**
 
