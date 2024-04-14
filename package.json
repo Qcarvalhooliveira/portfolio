@@ -20,7 +20,6 @@
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.0.8",
     "gsap": "^3.12.5",
-    "jquery": "^3.7.1",
     "pixi.js": "^8.0.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
@@ -29,8 +28,7 @@
     "react-slick": "^0.30.2",
     "react-spring": "^9.7.3",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.6",
-    "swiper": "^11.0.7"
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

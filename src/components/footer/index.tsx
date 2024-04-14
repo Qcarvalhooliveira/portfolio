@@ -3,9 +3,9 @@ import logo from "../../assets/logo.png";
 import discord from "../../assets/discord.png";
 
 export function Footer() {
-
   return (
     <FooterContainer>
+
       <div className="icons-container">
         <img src={logo} alt="Logo" />
         <a href="https://discord.gg/MsKE63YqUY" target="_blank" rel="noopener noreferrer">
@@ -13,9 +13,7 @@ export function Footer() {
         </a>
       </div>
       <div className="author">
-        <p>
-          ©2024 Queise Carvalho
-        </p>
+        <p>©2024 Queise Carvalho</p>
       </div>
     </FooterContainer>
   );
