@@ -59,7 +59,7 @@ export function Header(){
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) { // Alterado de pageYOffset para scrollY
+      if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -91,7 +91,7 @@ export function Header(){
         <a href="#contact">Contact</a>
       </div>
       <button className="resume">
-        <a href="https://drive.google.com/file/d/1BYcSNdjQWSkeO00IdwJvHW5WuH9Jyhel/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/1aCKZjuW2TwyL8ISKawtHUTi0Kvv1DODU/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           Resume</a>
