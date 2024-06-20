@@ -3,6 +3,11 @@ import { FooterContainer } from "./styles";
 import logo from "../../assets/logo.png";
 import discord from "../../assets/discord.png";
 
+const getFullYear = () => {
+  const currentDate = new Date();
+  return currentDate.getFullYear();
+};
+
 export function Footer() {
   const footerRef = useRef<HTMLDivElement>(null);
 
@@ -25,14 +30,12 @@ export function Footer() {
       ink.style.top = `${y}px`;
       ink.style.position = 'absolute';
 
-
       setTimeout(() => {
         footer.appendChild(ink);
         setTimeout(() => ink.remove(), 850);
       }, i * 100);
     }
   };
-
 
   return (
     <FooterContainer ref={footerRef} onMouseMove={handleMouseMove}>
@@ -43,7 +46,7 @@ export function Footer() {
         </a>
       </div>
       <div className="author">
-        <p>©2024 Queise Carvalho</p>
+        <p>© {getFullYear()} Queise Carvalho</p>
       </div>
     </FooterContainer>
   );
