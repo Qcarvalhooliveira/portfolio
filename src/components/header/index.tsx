@@ -110,9 +110,9 @@ export function Header(){
           <a href="#projects" onClick={toggleMenu}>Projects</a>
           <a href="#about" onClick={toggleMenu}>About me</a>
           <a href="#contact" onClick={toggleMenu}>Contact</a>
-          <a href="https://drive.google.com/file/d/1BYcSNdjQWSkeO00IdwJvHW5WuH9Jyhel/view?usp=sharing" target="_blank" onClick={toggleMenu} rel="noreferrer">Resume</a>
+          <a href="https://drive.google.com/file/d/1aCKZjuW2TwyL8ISKawtHUTi0Kvv1DODU/view?usp=sharing" target="_blank" onClick={toggleMenu} rel="noreferrer">Resume</a>
           <a href="https://www.linkedin.com/in/queise-carvalho-de-oliveira-50359749/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/Qcarvalhooliveira" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Qcarvalhooliveira" target="_blank"  rel="noopener noreferrer">GitHub</a>
         </div>
       )}
     </HeaderContainer>
