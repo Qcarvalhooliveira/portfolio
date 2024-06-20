@@ -1,4 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+`;
+
+const opacityChange = keyframes`
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+`;
 
 export const HeaderContainer = styled.header`
 
@@ -84,8 +102,8 @@ background-size: cover;
       text-decoration: none;
     }
 
-      &:hover {
-         
+      &:hover {         
+        animation: ${bounce} 1.5s infinite;
         background: #800F74;
       }
 
@@ -145,6 +163,10 @@ background-size: cover;
   img{
     max-width: 5rem;
     height: 5rem;
+  }
+
+  &:hover{
+    animation: ${bounce} 1.5s infinite, ${opacityChange} 1s infinite;
   }
 
 }
