@@ -103,7 +103,6 @@ background-size: cover;
     }
 
       &:hover {         
-        animation: ${bounce} 1.5s infinite;
         background: #800F74;
       }
 
