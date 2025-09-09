@@ -91,7 +91,7 @@ export function Header(){
         <a href="#contact">Contact</a>
       </div>
       <button className="resume">
-        <a href="https://drive.google.com/file/d/1aCKZjuW2TwyL8ISKawtHUTi0Kvv1DODU/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/1COvpoqUQ6TCtGq8U2oWPN_9QUrt25hI_/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           Resume</a>
