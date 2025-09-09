@@ -1,1 +1,0 @@
-{"version":3,"file":"const.mjs","sources":["../../../../src/rendering/batcher/shared/const.ts"],"sourcesContent":["export const MAX_TEXTURES = 16;\n"],"names":[],"mappings":";AAAO,MAAM,YAAe,GAAA;;;;"}
